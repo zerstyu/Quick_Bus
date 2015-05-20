@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" xmlns:app="http://schemas.android.com/apk/res/com.example.findway">
+     
+    <SlidingDrawer
+        android:id="@+id/slide"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:allowSingleTap="false"
+        android:bottomOffset="0dp"
+        android:content="@+id/content"
+        android:handle="@+id/handle"
+        android:orientation="vertical"
+        android:topOffset="350dp" >
+        
+<LinearLayout
+    android:id="@+id/handle"
+    android:layout_width="wrap_content"
+    android:layout_height="27dp"
+    android:orientation="vertical"
+    android:background="#FFFFFFFF" >
+
+    <ImageView
+        android:id="@+id/handle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/board" />
+
+</LinearLayout>
+        
+        <LinearLayout
+            android:id="@+id/content"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="#FFFFFFFF"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="2dp" >
+
+                <TextView
+                    android:id="@+id/textView1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:lineSpacingExtra="-5dp"
+                    android:text="TextView"
+                    android:textColor="#000000"
+                    android:textColorHint="@android:color/black"
+                    android:textSize="20sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.70" >
+
+                <TextView
+                    android:id="@+id/text_dis"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom"
+                    android:layout_marginLeft="5dp"
+                    android:text="TextView"
+                    android:textColor="#000000" />
+
+            </LinearLayout>
+        </LinearLayout>
+
+    </SlidingDrawer>
+</LinearLayout>
+
+
+       
